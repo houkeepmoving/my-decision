@@ -1,0 +1,8 @@
+<!-- list.wxml -->
+<view class="list-container">
+  <view wx:for="{{ myDecisionList }}" wx:key="index" class="list-wrapper" data-item="{{ item }}" data-index="{{ index }}" bindtap="linkToEdit">
+    <view class="left-content">{{ item.title }}</view>
+    <view class="edit-icon"></view>
+  </view>
+  <view class="add-new-btn"></view>
+</view>

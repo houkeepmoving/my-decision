@@ -1,0 +1,4 @@
+<!-- template.wxml -->
+<view class="template-container">
+  模板列表
+</view>

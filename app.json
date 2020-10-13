@@ -1,7 +1,9 @@
 {
   "pages":[
+    "pages/list/list",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/edit/edit",
+    "pages/template-list/template-list"
   ],
   "window":{
     "backgroundTextStyle":"light",

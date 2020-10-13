@@ -1,0 +1,4 @@
+<!-- edit.wxml -->
+<view class="list-container">
+  <view>{{ myDecision.title }}</view>
+</view>
