@@ -1,7 +1,6 @@
 //list.js
 //获取应用实例
 const app = getApp()
-
 Page({
   data: {
     myDecisionList: [
@@ -107,10 +106,7 @@ Page({
     ]
   },
   linkToEdit: (e) => {
-    wx.setStorage({
-      key: 'currentItem',
-      data: JSON.stringify(e.currentTarget.dataset.item)
-    });
+    app.globalData.currentItem = e.currentTarget.dataset.item;
     wx.navigateTo({
       url: '../edit/edit',
     });

@@ -7,14 +7,8 @@ Page({
     myDecision: {}
   },
   onReady() {
-    let that = this;
-    wx.getStorage({
-      key: 'currentItem',
-      success (res) {
-        that.setData({
-          myDecision: JSON.parse(res.data)
-        });
-      }
+    this.setData({
+      myDecision: app.globalData.currentItem
     });
   }
 })

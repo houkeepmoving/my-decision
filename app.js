@@ -34,6 +34,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    currentItem: {} // 编辑决定的JOSN
   }
 })
