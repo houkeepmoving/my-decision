@@ -1,4 +1,24 @@
 <!-- edit.wxml -->
-<view class="list-container">
-  <view>{{ myDecision.title }}</view>
+<view class="edit-container">
+  <view class="content-box">
+    <view class="title-container">
+      <view class="icon-title"></view>
+      <view class="input-wrapper">
+        <input data-title="{{ myDecision.title }}" type="text" class="input-ele" value="{{ myDecision.title }}" placeholder="键入你的疑惑问题" bindinput="titleInputHandel"/>
+      </view>
+    </view>
+    <view class="content-list" wx:for="{{ myDecision.list }}" wx:key="index">
+      <view class="icon-delete" data-index="{{ index }}" bindtap="deleteHandel"></view>
+      <view class="input-wrapper">
+        <input data-item="{{ item }}" data-index="{{ index }}" type="text" class="input-ele" value="{{ item.value }}" placeholder="键入你的疑惑内容" bindinput="contentInputHandel"/>
+      </view>
+    </view>
+    <view class="add-new-btn" bindtap="addNewHandel">
+      <view class="add-icon"></view>
+      <view class="tips">添加新的疑惑内容</view>
+    </view>
+  </view>
+  <view class="confirm-btn-wrapper">
+    <view class="confirm-btn" bindtap="confirm">确定</view>
+  </view>
 </view>

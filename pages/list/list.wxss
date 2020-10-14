@@ -20,7 +20,7 @@ page {
   justify-content: space-between;
   background: #fff;
   margin-bottom: 40rpx;
-  border-radius: 10rpx;
+  border-radius: 14rpx;
 }
 .list-wrapper:last-of-type {
   margin-bottom: 0;
