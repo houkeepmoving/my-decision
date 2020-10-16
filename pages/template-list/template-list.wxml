@@ -1,4 +1,16 @@
 <!-- template.wxml -->
 <view class="template-container">
-  模板列表
+    <view class="common-wrapper">
+      <view class="title">自定义</view>
+      <view class="make-new-list" bindtap="createNewOne">
+        <view class="icon"></view>
+        <view class="text make-new">创建新决定</view>
+      </view>
+    </view>
+    <view class="common-wrapper">
+      <view class="title">热门的模板</view>
+      <view class="make-new-list" wx:for="{{ hotDecisionList }}" wx:key="index" data-id="{{ item.id }}" data-index="{{ index }}" bindtap="hotTemplateClick">
+        <view class="text">{{ item.title }}</view>
+      </view>
+    </view>
 </view>

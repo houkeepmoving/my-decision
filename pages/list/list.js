@@ -3,11 +3,11 @@
 const app = getApp()
 Page({
   data: {
-    decisionList: []
+    myDecisionList: []
   },
   onReady () {
     this.setData({
-      decisionList: app.globalData.myDecisionList
+      myDecisionList: app.globalData.myDecisionList
     })
   },
   linkToEdit: (e) => {

@@ -35,106 +35,111 @@ App({
   },
   globalData: {
     userInfo: null,
-    myDecisionList: [ // 我的决定列表数据
+    hotDecisionList: [ // 热门决定列表数据
       {
-        id: 1,
+        id: 11,
         title: '怎么样原谅男盆友？',
+        isHot: 1,
         list: [
           {
-            id: 11,
+            id: 111,
             value: '写1000个我爱你',
             weight: '10%'
           },
           {
-            id: 12,
+            id: 112,
             value: '鬼搓衣板',
             weight: '10%'
           },
           {
-            id: 13,
+            id: 113,
             value: '海底捞',
             weight: '10%'
           },
           {
-            id: 14,
+            id: 114,
             value: '无条件原谅',
             weight: '10%'
           }
         ]
       },
       {
-        id: 2,
+        id: 12,
         title: '谁来做家务',
+        isHot: 1,
         list: [
           {
-            id: 21,
+            id: 121,
             value: '老公',
             weight: '10%'
           },
           {
-            id: 22,
+            id: 122,
             value: '老婆',
             weight: '10%'
           }
         ]
       },
       {
-        id: 3,
+        id: 13,
         title: '掷骰子',
+        isHot: 1,
         list: [
           {
-            id: 31,
+            id: 131,
             value: 1,
             weight: '10%'
           },
           {
-            id: 32,
+            id: 132,
             value: 2,
             weight: '10%'
           },
           {
-            id: 33,
+            id: 133,
             value: 3,
             weight: '10%'
           },
           {
-            id: 34,
+            id: 134,
             value: 4,
             weight: '10%'
           },
           {
-            id: 35,
+            id: 135,
             value: 5,
             weight: '10%'
           },
           {
-            id: 36,
+            id: 136,
             value: 6,
             weight: '10%'
           }
         ]
       },
       {
-        id: 4,
+        id: 14,
         title: '你是什么垃圾？',
+        isHot: 1,
         list: [
           {
-            id: 41,
+            id: 141,
             value: '可回收垃圾',
             weight: '10%'
           },
           {
-            id: 42,
+            id: 142,
             value: '干垃圾',
             weight: '10%'
           },
           {
-            id: 43,
+            id: 143,
             value: '有害垃圾',
             weight: '10%'
           }
         ]
       }
-    ]
+    ],
+    myDecisionList: [] // 我的历史决定
   }
 })
