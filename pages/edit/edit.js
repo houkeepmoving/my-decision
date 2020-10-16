@@ -91,7 +91,7 @@ Page({
     index >= 0 && app.globalData.myDecisionList.splice(index, 1);
     app.globalData.myDecisionList.unshift(this.data.myDecision);
     wx.navigateBack({
-      delta: 2,
+      delta: 1,
     })
   }
 })
