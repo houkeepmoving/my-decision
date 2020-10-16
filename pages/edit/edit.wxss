@@ -7,7 +7,6 @@ page {
   height: 100%;
   padding: 40rpx 40rpx;
   box-sizing: border-box;
-  background: #eee;
   display: flex;
   flex-direction: column;
 }

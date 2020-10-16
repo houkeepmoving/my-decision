@@ -1,15 +1,14 @@
 {
   "pages":[
-    "pages/list/list",
     "pages/index/index",
+    "pages/list/list",
     "pages/edit/edit",
     "pages/template-list/template-list"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#FFC300",
+    "navigationBarTextStyle": "white"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

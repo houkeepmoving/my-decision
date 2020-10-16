@@ -1,12 +1,13 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp() 
 
 Page({
   data: {
   },
+  onShow() {
+  },
   clickHandel: () => {
-    console.log('哈哈');
     wx.navigateTo({
       url: '../list/list',
       success: (res) => {

@@ -66,6 +66,24 @@ Page({
   },
   confirm: function() {
     let that = this;
+    let flag = that.data.myDecision.list && that.data.myDecision.list.length && that.data.myDecision.list.every((val, key) => {
+      return !val.value;
+    });
+    if (!that.data.myDecision.title) {
+      wx.showToast({
+        title: '请输入令您疑惑的问题',
+        icon: 'success',
+        duration: 2000
+      });
+      return
+    } else if (flag) {
+      wx.showToast({
+        title: '请输入令您疑惑的内容',
+        icon: 'success',
+        duration: 2000
+      });
+      return
+    }
     let index = app.globalData.myDecisionList.findIndex((val, key) => {
       console.log(val)
       return Number(val.id) === Number(that.data.myDecision.id);
