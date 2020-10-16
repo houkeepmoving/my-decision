@@ -9,8 +9,9 @@
     </view>
     <view class="common-wrapper">
       <view class="title">热门的模板</view>
-      <view class="make-new-list" wx:for="{{ hotDecisionList }}" wx:key="index" data-id="{{ item.id }}" data-index="{{ index }}" bindtap="hotTemplateClick">
+      <view class="make-new-list" wx:for="{{ hotDecisionList }}" wx:key="index" data-item="{{ item }}" data-index="{{ index }}" bindtap="hotTemplateClick">
         <view class="text">{{ item.title }}</view>
+        <!-- <view class="edit-btn" data-item="{{ item }}" data-index="{{ index }}" bindtap="hotTemplateClick"></view> -->
       </view>
     </view>
 </view>

@@ -5,14 +5,14 @@ Page({
   data: {
     myDecisionList: []
   },
-  onReady () {
+  onShow () {
     this.setData({
       myDecisionList: app.globalData.myDecisionList
     })
   },
   linkToEdit: (e) => {
     wx.navigateTo({
-      url: `../edit/edit?id=${e.currentTarget.dataset.id}&index=${e.currentTarget.dataset.index}`,
+      url: `../edit/edit?item=${JSON.stringify(e.currentTarget.dataset.item)}&index=${e.currentTarget.dataset.index}`,
     });
   },
   linkToTemplateList: () => {

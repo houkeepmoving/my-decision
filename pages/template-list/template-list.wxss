@@ -30,6 +30,7 @@ page {
 .make-new-list {
   width: 100%;
   height: 100rpx;
+  position: relative;
   display: flex;
   align-items: center;
   padding: 20rpx;
@@ -42,4 +43,14 @@ page {
 }
 .make-new {
   color: #1296db;
+}
+.edit-btn {
+  width: 44rpx;
+  height: 44rpx;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAElElEQVRYR+3YDUyUdRzA8e/DhphZoxKU0sIsLVdzwZFKbL7EElsbXQo4U15qXZmhMQWxjJcsIUKIs4FRiPIiAbfkzU7HmZgILQ7GYDHJWgbUsrmc2RR09LSHF6PzuHueh7trbj7b7dnu+T//+/x//9/93wRusku4ybzcAju7x/6PCM8GPvRw5xl9Aj26VYQLfnTJbairwZ5Aben7GNau4CNBA/uT6Y0KJUQu2tXgqvaDVC+Yy77RiCpFuxQsmgkDKiy7XwnaVeBk0TyUpzdgx0a6MJneaDvp4WzwfMBbNONlC6sE7UzwPKAqSUd5qo5kuaPAXC18f4gqQYPW2jvOAj8MGLfHULZrIzvkYlPzISUfxBZShQBSXAWeA3wVH0lJxibeUoJt6YK67PGxUl2OjrAvcCruRYqy4khUgm1oheN7bWMdDb4fMMdGsF8fT7wSbF0jtBywj3UkeCbQ+dpqCvIS2SIXu6sQSg5DV6U8rKPAPsAZnZb8T94mTi5W/zlkFkNPnXysI8DTgZ91WnKVYPdVw9Yc+OOYMuxEwdJk8JtOS44SbHk9RCbBQJNy7ETA9wDndVqylWClH5RGg6V+6rBqwdIS8YIa7FB+i+qxasB3AheVYitNEJ5oewaT+2dVMnFMBS6pwa57R33O3rAUldmy24DLarAvvwt/nphYGow1yomwB9CvBrshDc6bHIeVk8PuwFU12Dcz4RejY7H2wG7AoBpsgh5+qnY81hZ4KXBcDXZHHnQbnIO1BRal4Ss9lovbopBWYXYvaeja+Rl0lDkPawt8SWzjecEPk2i2a6XsKOwuAXORc7HjgaV0qBHNfAxs7zsHzZ0QFmwdXlgDn1ZBU4HzseOB64B60cxa4EmpkDRLSWBLdJ4BKurl7RTs95O8EtbG4W/EVtYhcmZsFZbo7FI40gxH97gmsqMWa+ALopkkQG/Z5lH0D73Q3AE1WbKxWq+7WLPEn3KDiS8s6tXe68V6v/kU1p2g1l6cLcEbgAWimVnAs9ZeXhgFs6aD4QPZ2LR5vrz+wjKErFKm9jdRL2hYMVK3LiGKtGvXGMg1MKP/FFFCAMW20JZg6ZAuUWylBxFpSqaxHTKKoPbr4WoemMG5s4eJFvw5Yi8aI89PVu8mKHTL0A5dvNwIU4Ku79bNP1bjPycU4fbJdP/VSNd4ByjjpcTpY3tJbe/mYKkR2k6DzzSuhARSvyqIzOcSOCkTObaYKA2NgmYIWVGRTlh44nWwdOaWIj2bMpn3+r7kjbuXI623x70sIyz6TOP3kMX0PfIgFQkR6IVArqhAWoK/EzQ8BkSuDOSAsWkYLJpZCOQIGhYBLx3KpEC71fZZiZzV2kS8i9zcaBj8lmJBwyvA0NbKmEPuys0Yt0UTk76RzpFjqacLUzDFpMgH+z7+EI0zvblvkjtIHw/pPmnk7v7vMZHnHbA6GAwmSNYNt2fZqzD4N/RfhYGB4fujs2HTGjqWa9gsBNAglfP2ZL0oULTEDyozqBD8iRiNSGwEbXvKeeI/w2kwv5bv5ClhMWel750d4Yn0jtV3b4EdHlKLCm+6CP8DqkWaPIA01t8AAAAASUVORK5CYII=') no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 30rpx;
+  top: 50%;
+  transform: translateY(-50%);
 }
