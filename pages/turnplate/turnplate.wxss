@@ -3,7 +3,7 @@ page {
   width: 100%;
   height: 100%;
 }
-.index-container {
+.turnplate-container {
   width: 100%;
   height: 100%;
   padding: 0 40rpx;
@@ -17,4 +17,64 @@ page {
   position: fixed;
   right: 80rpx;
   bottom: 300rpx;
+}
+/* .pie-wrapper {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 600rpx;
+  height: 600rpx;
+  background: #FFC300;
+  margin: 100rpx auto;
+  animation: run-rotate 3s ease-out;
+} */
+.sector-list-box {
+  position: relative;
+  height: 600rpx;
+  width: 600rpx;
+  background-color: #FFC300;
+  border-radius: 50%;
+}
+.sector-wrapper {
+  position: absolute;
+  width: 300rpx;
+  height: 600rpx;
+  border-radius: 0px 300rpx 300rpx 0;
+  overflow: hidden;
+  left: 300rpx;
+  top: 0px;
+  transform-origin: left center;
+}
+.sector-wrapper:nth-of-type(1) {
+  transform: rotate(-100deg);
+}
+.sector-wrapper:nth-of-type(2) {
+  transform: rotate(120deg);
+}
+.sector-wrapper:nth-of-type(3) {
+  transform: rotate(360deg);
+}
+.sector-inner {
+  text-align: center;
+  display: block;
+  width: 40px;
+  padding: 5px 3px 0 57px;
+  height: 195px;
+  transform: translateX(-100px) rotate(36deg);
+  transform-origin: right center;
+  /* border-radius: 100px 0 0 100px; */
+}
+.sector-wrapper:nth-child(2n+1) .sector-inner {
+  background: #fef6e0;
+}
+.sector-wrapper:nth-child(2n) .sector-inner {
+  background: #ffffff;
+}
+@keyframes run-rotate{
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(calc(360deg * 3));
+  }
 }

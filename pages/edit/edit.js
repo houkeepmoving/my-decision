@@ -5,9 +5,13 @@ const pages = getCurrentPages()
 Page({
   data: {
     myDecision: {},
+    refpage: '',
     currentIndex: ''
   },
   onLoad(options) {
+    this.setData({
+      refpage: options.refpage
+    });
     // 热门的模板
     if (options.item) {
       this.setData({
@@ -85,13 +89,12 @@ Page({
       return
     }
     let index = app.globalData.myDecisionList.findIndex((val, key) => {
-      console.log(val)
       return Number(val.id) === Number(that.data.myDecision.id);
     });
     index >= 0 && app.globalData.myDecisionList.splice(index, 1);
     app.globalData.myDecisionList.unshift(this.data.myDecision);
     wx.navigateBack({
-      delta: 1,
+      delta: that.data.refpage === 'template' ? 2 : 1
     })
   }
 })

@@ -15,6 +15,12 @@ Page({
       url: `../edit/edit?item=${JSON.stringify(e.currentTarget.dataset.item)}&index=${e.currentTarget.dataset.index}`,
     });
   },
+  // 跳转大转盘页
+  linkToTurnplate: (e) => {
+    wx.navigateTo({
+      url: `../turnplate/turnplate?item=${JSON.stringify(e.currentTarget.dataset.item)}&index=${e.currentTarget.dataset.index}`,
+    });
+  },
   linkToTemplateList: () => {
     wx.navigateTo({
       url: '../template-list/template-list',

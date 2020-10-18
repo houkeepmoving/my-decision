@@ -13,13 +13,13 @@ Page({
   },
   hotTemplateClick: function(e) {
     wx.navigateTo({
-      url: `../edit/edit?item=${JSON.stringify(e.currentTarget.dataset.item)}&index=${e.currentTarget.dataset.index}`,
+      url: `../edit/edit?item=${JSON.stringify(e.currentTarget.dataset.item)}&index=${e.currentTarget.dataset.index}&refpage=template`,
     });
   },
   // 创建新的决定
   createNewOne: function(e) {
     wx.navigateTo({
-      url: '../edit/edit?isNewOne=1'
+      url: '../edit/edit?refpage=template'
     });
   },
   // 选择模板

@@ -1,5 +1,0 @@
-<!--index.wxml-->
-<view class="index-container">
-  <view>我是首页</view>
-  <view class="menue-btn" bindtap="clickHandel"></view>
-</view>

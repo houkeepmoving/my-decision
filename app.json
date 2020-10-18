@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/list/list",
+    "pages/turnplate/turnplate",
     "pages/edit/edit",
     "pages/template-list/template-list"
   ],

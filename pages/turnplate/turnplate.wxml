@@ -1,0 +1,11 @@
+<!--turnplate.wxml-->
+<view class="turnplate-container">
+  <view class="pie-wrapper">
+    <view class="sector-list-box">
+      <view class="sector-wrapper" wx:for="{{ currentDicisonList }}" wx:key="index">
+        <view class="sector-inner">{{ item.value }}</view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="menue-btn" bindtap="clickHandel"></view> -->
+</view>
