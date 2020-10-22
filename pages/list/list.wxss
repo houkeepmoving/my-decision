@@ -76,4 +76,7 @@ page {
   font-weight: 600;
   background-color: #FFC300;
   border-radius: 16rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -140,6 +140,7 @@ App({
         ]
       }
     ],
-    myDecisionList: [] // 我的历史决定
+    myDecisionList: [], // 我的历史决定
+    runDegs: 0
   }
 })

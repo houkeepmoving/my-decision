@@ -1,8 +1,8 @@
 <!-- list.wxml -->
 <view class="list-container">
-  <view wx:for="{{ myDecisionList }}" wx:key="index" class="list-wrapper" data-item="{{ item }}" data-index="{{ index }}" bindtap="linkToTurnplate">
+  <view wx:for="{{ myDecisionList }}" wx:key="index" class="list-wrapper" data-item="{{ item }}" data-index="{{ index }}" catchtap="linkToTurnplate">
     <view class="left-content">{{ item.title }}</view>
-    <view class="edit-icon" data-item="{{ item }}" data-index="{{ index }}" bindtap="linkToEdit"></view>
+    <view class="edit-icon" data-item="{{ item }}" data-index="{{ index }}" catchtap="linkToEdit"></view>
   </view>
   <!-- 无数据提示 -->
     <view class="no-data-wrapper" wx:if="{{ !myDecisionList.length }}">
